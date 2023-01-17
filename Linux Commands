@@ -1,0 +1,129 @@
+ Mkdir: Creates a directory at the location.
+Syntax: mkdir<directory_name>
+
+Touch: Touch creates a file in the specified location.
+Syntax: touch <filename.txt
+
+Cd: Used to traverse directories by specifying path
+Syntax: cd <directory name>
+
+Cat: It can be used to edit, view and merge files 
+• cat> <filename.txt> = allows editing the file, ctrl+d is used to save and exit the file
+• cat <filename.txt> = displays/shows the contents of file.
+• Cat <filename1><filename2> > <filename3> =merges the contents of file 1 and 2 in 
+file 3
+
+Ls: Used to list all the files and directories in a working directory.
+Syntax: ls
+
+Pwd: Gives the current working directory and its file path.
+Syntax: pwd
+
+Cp: Copy files to a directory.
+Syntax: cp <existing filename> <new filename>
+
+Mv: Move files to a directory
+ Syntax: mv <filename> <directory path>
+ 
+ Rm: Deletes the file
+Syntax: rm <filename.txt>
+
+Head: Reads first ten number of lines of a file from the start
+Syntax: head<filename.txt>
+
+Tail: Reads specified number of lines of a file from the end
+Syntax: tail <filename.txt>
+
+Tac: Reads the lines in opposite order.
+Syntax: tac <filename.txt>
+
+More: Reads the whole file and not part of it
+Syntax: more <filename.txt>
+
+ Vi: It is used to edit a file. After entering the command and hitting enter one must 
+input i to open insert mode. After making changes, :wq must be entered.
+Syntax: vi <filename.txt>
+
+rmdir: It is used to remove empty directories from system.
+Syntax: rmdir <directory name>
+
+id: displays id of the user who is using the system.
+Syntax: id 
+
+clear: It clears screen of all the commands that were executed before.
+Syntax: clear
+
+ vi: It allows to edit and existing file or create a new file from scratch.
+ To type: press i
+ To save: :w
+ To exit: :wq
+Syntax: vi <filename.txt>
+
+19. grep: It is used to filter out/highlight a particular word/sentence from the text in the file.
+Syntax: grep <word> <filename.txt>
+
+
+20. diff: It displays the difference between the two created files. It only detects the difference in 
+continuous lines.
+Syntax: diff <filename1.txt> <filename2.txt>
+
+
+21. ping: It is used to check the internet connectivity between host and server/host.
+Syntax: ping <searchengine>
+
+
+22. history: It displays all the commands that have been executed during a session.
+Syntax: history
+
+
+23. hostname: It displays the name of the computer that is being worked upon.
+Syntax: hostname
+
+
+24. host id: It displays/prints the network address of the host name.
+Syntax: hostname -i
+
+
+25. chmod: It changes file mode bits.
+Syntax: For read only : chmod u=r <filename.txt>
+ For write only: chmod u=w <filename.txt>
+ 
+ 
+26. nl: It displays the number of lines of a particular file.
+Syntax: nl <filename.txt>
+
+
+27. wc: It displays the number of lines, word counts and character count in a file. 
+Syntax: wc <filename.txt>
+
+
+28. uniq: It is used to remove duplicate files.
+Syntax: uniq
+
+
+30. ls -ltr: It displays all directories with access specified.
+Syntax: ls -ltr 
+
+
+31. ps: it prints the report of the current processes.
+Syntax: ps
+
+
+32. top: It displays all linux tasks performed.
+Syntax: top
+
+
+33. kill: It kills tasks.
+Syntax: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+
+
+34. curl: It is a tool which is used to retrieve information and files from URLs or internet addresses.
+Syntax: curl <any url>
+
+
+35. chown: It changes file owner and group.
+Syntax: chown <userid> <filename.txt>
+
+
+36. Whoami: It prints effective userid.
+Syntax: whoami
