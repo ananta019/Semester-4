@@ -1,0 +1,29 @@
+Question: The total distance travelled by vehicle in 't' seconds is given by distance = ut+1/2at2
+where 'u' and 'a' are the initial velocity (m/sec.) and acceleration (m/sec2).
+Write C program to find the distance travelled at regular intervals of time given
+the values of 'u' and 'a'. The program should provide the flexibility to the user
+to select his own time intervals and repeat the calculations for different values of 'u' and 'a'.
+ 
+ import java.util.Scanner;
+class Distance 
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the initial velocity");
+        double u=sc.nextDouble();
+        System.out.println("Enter acceleration");
+        double a=sc.nextDouble();
+        System.out.println("Enter the time interval");
+        double t=sc.nextDouble();
+        double d=sc.nextDouble();
+        for(int i=0; i<=t ;i++)
+        {
+             d = u*t+(0.5*a*t*t);
+        }
+      
+        System.out.println("Distance travelled will be:"+d);
+    
+}
+}
+
