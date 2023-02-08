@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class student {
+    int rollno;
+    Scanner sc= new Scanner(System.in);
+    void getno()
+    {
+        System.out.println("Enter roll no of the student:");
+        rollno = sc.nextInt();
+        
+    }
+    void putno()
+    {
+        System.out.println("The roll no of the student is:" +rollno);
+    }
+class Test extends student
+    {
+        int marks1, marks2;
+        void getmarks()
+        {
+          System.out.println("Enter the marks of subject 1");
+          marks1 =sc.nextInt();
+          System.out.println("Enter the marks of subject 2");
+          marks2 =sc.nextInt();
+        }
+        void putmarks()
+        {
+            System.out.println("The marks of subject 1 are:" +marks1);
+            System.out.println("The marks of Subject 2 are:" +marks2);
+        }
+    }
+interface sports
+{
+    double sportwt= 6.0;
+    void putwt();
+}
+  class Result extends Test implements sports
+  {
+  int total;
+  
+  public void putwt()
+  {
+    System.out.println("The sport will be:" +sportwt);
+  }
+  void display()
+  {
+    total=marks1+marks2;
+    System.out.println("Total marks:" +total);
+  }
+  }  
+
+  class Main
+  {
+    public static void main(String[] args){
+    student i=new student();
+        
+    Result r1= i.new Result();
+        r1.getno();
+        r1.putno();
+        r1.getmarks();
+        r1.putmarks();
+        r1.putwt();
+        r1.display();
+    
+
+  }
+}
+
+}
