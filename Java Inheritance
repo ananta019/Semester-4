@@ -1,0 +1,41 @@
+interface Inheritance
+{
+    void function();
+}
+
+class sample implements Inheritance
+{
+   public void function()
+  {
+    System.out.println("This is a sample class");
+  }
+}
+
+class random extends sample
+{
+ void functionone()
+ {
+    System.out.println("This is a random class");
+
+ }
+}
+
+class fun extends sample
+{
+    void functiontwo()
+    {
+        System.out.println("This is a fun class");
+    }
+}
+
+class M{
+    public static void main(String[] args)
+    {
+     random r = new random();
+     fun f = new fun();
+     r.function();
+     r.functionone();
+     f.function();
+     f.functiontwo();
+    }
+}
